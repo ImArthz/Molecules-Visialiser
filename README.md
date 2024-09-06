@@ -2,6 +2,42 @@
 ## Introdução
 O Molecule Visualizer é um aplicativo de visualização de moléculas que oferece uma interface gráfica para exibir moléculas em 2D e 3D. Utiliza a biblioteca RDKit para manipulação de moléculas e py3Dmol para visualizações 3D. Abaixo está uma explicação detalhada das funções e da estrutura do código.
 
+## Executando o Código de Visualização de Moléculas
+Este código é uma aplicação GUI (Interface Gráfica do Usuário) para visualizar moléculas usando Python. Abaixo, você encontrará uma explicação passo a passo sobre como executá-lo e as bibliotecas necessárias.
+
+# Bibliotecas Necessárias
+* RDKit: Biblioteca para manipulação e visualização de moléculas químicas.
+* py3Dmol: Biblioteca para visualização 3D de moléculas.
+* Tkinter: Biblioteca padrão do Python para criar interfaces gráficas.
+* Pillow: Biblioteca para manipulação de imagens.
+# Para instalar essas bibliotecas, use os seguintes comandos:
+
+```bash
+pip install rdkit
+pip install py3Dmol
+pip install pillow
+```
+* Nota: O RDKit pode ser difícil de instalar diretamente via pip, pois pode precisar de compilação. Em alguns casos, é melhor usar uma distribuição como o Anaconda, que já inclui o RDKit.
+
+## Passos para Executar o Código
+# Preparação do Ambiente
+
+Crie um diretório de trabalho:
+
+```bash
+mkdir molecule_visualizer
+cd molecule_visualizer
+```
+# Execute o Código
+
+* Abra um terminal e navegue até o diretório onde você salvou o arquivo Python.
+
+* Execute o script Python com o comando:
+
+```bash
+python main.py
+```
+A GUI (Interface Gráfica do Usuário) será exibida. Nela, você poderá buscar moléculas pelo nome e visualizá-las em 2D e 3D.
 ##Estrutura do Código
 ## 1. Importação de Módulos
 O código começa com a importação dos módulos necessários:
