@@ -110,6 +110,27 @@ def on_search_change(*args):
     for name in filtered_molecules:
         molecule_listbox.insert(tk.END, name)
 
+# Função para abrir URL em navegadores especificados
+def open_in_browser(url):
+    # Lista de navegadores a tentar
+    browsers = {
+        'chrome': 'google-chrome',
+        'firefox': 'firefox',
+        'safari': 'safari',
+        'opera': 'opera'
+    }
+    
+    # Tenta abrir o URL com os navegadores especificados
+    for name, command in browsers.items():
+        try:
+            webbrowser.get(command).open(url)
+            return
+        except webbrowser.Error:
+            continue
+
+    # Se todos falharem, abre no navegador padrão
+    webbrowser.open(url)
+
 # Funções para a GUI
 def visualize_molecule_gui():
     selected_molecule = molecule_listbox.get(tk.ACTIVE)
@@ -131,8 +152,8 @@ def visualize_molecule_gui():
             html_file = visualize_with_py3dmol(smiles, f"{molecule_name}_3d.html")
 
             if html_file:
-                file_path = os.path.join('outputs', html_file)
-                webbrowser.open(file_path)
+                file_path = os.path.join('outputs', f"{molecule_name}_3d.html")
+                open_in_browser(file_path)  # Abre o arquivo HTML com a função
             else:
                 messagebox.showerror("Error", "Failed to create HTML file.")
     else:
@@ -157,7 +178,7 @@ def visualize_formula_gui():
             draw_formula(mol, f"{molecule_name}_formula.png")
             img_file = os.path.join('outputs', f"{molecule_name}_formula.png")
             # Abrir imagem PNG gerada
-            webbrowser.open(img_file)
+            open_in_browser(img_file)
         else:
             messagebox.showerror("Error", "Failed to visualize molecule.")
 
@@ -172,12 +193,12 @@ def search_molecule_online():
         smiles = molecules[selected_molecule]
         # URL do PubChem para pesquisa de moléculas
         pubchem_url = f"https://pubchem.ncbi.nlm.nih.gov/compound/{selected_molecule.replace(' ', '_')}"
-        webbrowser.open(pubchem_url)
+        open_in_browser(pubchem_url)
     else:
         messagebox.showerror("Error", "Selected molecule not found in the database.")
 
 def open_git_link():
-    webbrowser.open("https://github.com/ImArthz/Molecules-Visualiser")
+    open_in_browser("https://github.com/ImArthz/Molecules-Visualiser")
 
 def exit_gui():
     # Limpar arquivos e fechar o aplicativo
@@ -186,6 +207,7 @@ def exit_gui():
 
 def main_gui():
     global molecule_listbox, root, search_var, all_molecules
+    ensure_output_directory()  # Garante que a pasta de saída exista
     root = tk.Tk()
     root.title("Molecule Visualizer")
 
