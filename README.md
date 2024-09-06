@@ -6,14 +6,14 @@ O Molecule Visualizer é um aplicativo de visualização de moléculas que ofere
 
 ## Bibliotecas Necessárias
 
-# Para executar o Molecule Visualizer, você precisará das seguintes bibliotecas:
+### Para executar o Molecule Visualizer, você precisará das seguintes bibliotecas:
 
 - **RDKit**: Biblioteca para manipulação e visualização de moléculas químicas.
 - **py3Dmol**: Biblioteca para visualização 3D de moléculas.
 - **Tkinter**: Biblioteca padrão do Python para criar interfaces gráficas.
 - **Pillow**: Biblioteca para manipulação de imagens.
 
-# Para instalar essas bibliotecas, use os seguintes comandos:
+### Para instalar essas bibliotecas, use os seguintes comandos:
 
 ```bash
 pip install rdkit
@@ -22,7 +22,7 @@ pip install pillow
 ```
 * Nota: O RDKit pode ser difícil de instalar diretamente via pip, pois pode precisar de compilação. Em alguns casos, é melhor usar uma distribuição como o Anaconda, que já inclui o RDKit.
 
-# Passos para Executar o Código
+## Passos para Executar o Código
 * Preparação do Ambiente
 * Crie um diretório de trabalho:
 ```bash
@@ -51,46 +51,46 @@ import py3Dmol
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 ```
-# 2. Função ensure_output_directory()
+### 2. Função ensure_output_directory()
 * Garante que o diretório outputs exista.
 
-# 3. Função load_molecules()
+### 3. Função load_molecules()
 * Carrega as informações das moléculas de um arquivo JSON.
 
-# 4. Função visualize_molecule()
+### 4. Função visualize_molecule()
 * Cria a estrutura 2D da molécula a partir da string SMILES.
 
-# 5. Função draw_molecule()
+### 5. Função draw_molecule()
 * Desenha a molécula em 2D e salva como um arquivo PNG.
 
-# 6. Função visualize_with_py3dmol()
+### 6. Função visualize_with_py3dmol()
 * Gera uma visualização 3D da molécula e salva como um arquivo HTML.
 
-# 7. Função cleanup_files()
+### 7. Função cleanup_files()
 * Remove arquivos antigos do diretório outputs.
 
-# 8. Função update_molecule_list()
+### 8. Função update_molecule_list()
 * Atualiza a lista de moléculas na GUI com base no arquivo JSON.
 
-# 9. Função on_search_change()
+### 9. Função on_search_change()
 * Filtra a lista de moléculas com base no termo de busca inserido pelo usuário.
 
-# 10. Função visualize_molecule_gui()
+### 10. Função visualize_molecule_gui()
 * Lida com a visualização de uma molécula selecionada na GUI. Gera imagens 2D e 3D da molécula e abre a visualização 3D no navegador.
 
-# 11. Função open_git_link()
+### 11. Função open_git_link()
 * Abre um link para o repositório Git dos criadores.
 
-# 12. Função open_chemistry_resource_link()
+### 12. Função open_chemistry_resource_link()
 * Abre um link para uma página com uma explicação detalhada da molécula pesquisada.
 
-# 13. Função exit_gui()
+### 13. Função exit_gui()
 * Limpa arquivos temporários e fecha a aplicação.
 
-# 14. Função main_gui()
+### 14. Função main_gui()
 * Cria e configura a interface gráfica principal, incluindo os novos botões para visualizar moléculas, sair da aplicação, acessar o repositório Git e abrir o recurso de química.
 
-# Novidades
+## Novidades
 * Adição do Botão "Chemistry Resource"
 * O aplicativo agora inclui um botão "Chemistry Resource" que abre um site renomado para uma explicação detalhada da molécula pesquisada.
 
@@ -103,9 +103,9 @@ from tkinter import ttk, filedialog, messagebox
 ## Conclusão
 O Molecule Visualizer proporciona uma maneira poderosa e interativa de visualizar moléculas em 2D e 3D. Cada função foi projetada para modularizar e otimizar o processo de visualização e interação com as moléculas. Com uma interface gráfica amigável e recursos avançados de visualização, o aplicativo é uma ferramenta valiosa para pesquisadores e entusiastas da química.
 
-## Colaboradores
+# Colaboradores
 * Arthur De Oliveira Mendonça
 
-## Redes Sociais:
+### Redes Sociais:
 
 <div align="center"> <h3>Connect with me:</h3> <p><strong>Arthur Mendonça</strong></p> <p> <a href="https://github.com/ImArthz" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="ImArthz" height="30" width="40" /> </a> <a href="https://twitter.com/Im_Arthz" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Im_Arthz" height="30" width="40" /> </a> <a href="https://api.whatsapp.com/send?phone=37988528423" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="WhatsApp" height="30" width="40" /> </a> <a href="https://discordapp.com/users/imarthz" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="imarthz" height="30" width="40" /> </a> </p> </div>
