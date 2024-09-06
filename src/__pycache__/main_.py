@@ -78,7 +78,14 @@ def visualize_with_py3dmol(smiles, output_file='molecule_3d.html'):
     with open(html_file, 'w') as f:
         f.write(viewer._make_html())
     logging.info("3D view saved as %s", html_file)
-    return output_file
+    return html_file
+
+# Gerar e salvar a fórmula química como imagem PNG
+def draw_formula(molecule, output_file='formula.png'):
+    ensure_output_directory()
+    img = Draw.MolToImage(molecule, size=(300, 300))
+    img.save(f'outputs/{output_file}')
+    logging.info("Formula image saved as outputs/%s", output_file)
 
 # Limpar todos os arquivos HTML e PNG
 def cleanup_files(directory='outputs'):
@@ -131,8 +138,46 @@ def visualize_molecule_gui():
     else:
         messagebox.showerror("Error", "Selected molecule not found in the database.")
 
+def visualize_formula_gui():
+    selected_molecule = molecule_listbox.get(tk.ACTIVE)
+    if not selected_molecule:
+        messagebox.showerror("Error", "Please select a molecule.")
+        return
+
+    molecules = load_molecules()
+    if selected_molecule in molecules:
+        smiles = molecules[selected_molecule]
+        molecule_name = selected_molecule
+
+        # Limpar arquivos antigos
+        cleanup_files()
+
+        mol = visualize_molecule(smiles)
+        if mol:
+            draw_formula(mol, f"{molecule_name}_formula.png")
+            img_file = os.path.join('outputs', f"{molecule_name}_formula.png")
+            # Abrir imagem PNG gerada
+            webbrowser.open(img_file)
+        else:
+            messagebox.showerror("Error", "Failed to visualize molecule.")
+
+def search_molecule_online():
+    selected_molecule = molecule_listbox.get(tk.ACTIVE)
+    if not selected_molecule:
+        messagebox.showerror("Error", "Please select a molecule.")
+        return
+
+    molecules = load_molecules()
+    if selected_molecule in molecules:
+        smiles = molecules[selected_molecule]
+        # URL do PubChem para pesquisa de moléculas
+        pubchem_url = f"https://pubchem.ncbi.nlm.nih.gov/compound/{selected_molecule.replace(' ', '_')}"
+        webbrowser.open(pubchem_url)
+    else:
+        messagebox.showerror("Error", "Selected molecule not found in the database.")
+
 def open_git_link():
-    webbrowser.open("https://github.com/creators")
+    webbrowser.open("https://github.com/ImArthz/Molecules-Visialiser")
 
 def exit_gui():
     # Limpar arquivos e fechar o aplicativo
@@ -176,6 +221,8 @@ def main_gui():
     button_frame.pack(pady=10)
 
     tk.Button(button_frame, text="Visualize Molecule", command=visualize_molecule_gui, bg='#b3e5fc', fg='#000000', relief='raised', font=('Helvetica', 12)).pack(side=tk.LEFT, padx=5)
+    tk.Button(button_frame, text="Visualize 2D", command=visualize_formula_gui, bg='#b3e5fc', fg='#000000', relief='raised', font=('Helvetica', 12)).pack(side=tk.LEFT, padx=5)
+    tk.Button(button_frame, text="Search Online", command=search_molecule_online, bg='#b3e5fc', fg='#000000', relief='raised', font=('Helvetica', 12)).pack(side=tk.LEFT, padx=5)
     tk.Button(button_frame, text="Exit", command=exit_gui, bg='#b3e5fc', fg='#000000', relief='raised', font=('Helvetica', 12)).pack(side=tk.LEFT, padx=5)
     tk.Button(button_frame, text="Git Link", command=open_git_link, bg='#b3e5fc', fg='#000000', relief='raised', font=('Helvetica', 12)).pack(side=tk.LEFT, padx=5)
 
