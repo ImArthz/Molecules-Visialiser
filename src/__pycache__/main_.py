@@ -177,7 +177,7 @@ def search_molecule_online():
         messagebox.showerror("Error", "Selected molecule not found in the database.")
 
 def open_git_link():
-    webbrowser.open("https://github.com/ImArthz/Molecules-Visialiser")
+    webbrowser.open("https://github.com/ImArthz/Molecules-Visualiser")
 
 def exit_gui():
     # Limpar arquivos e fechar o aplicativo
