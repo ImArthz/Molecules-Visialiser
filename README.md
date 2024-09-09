@@ -394,6 +394,7 @@ O Molecule Visualizer proporciona uma maneira poderosa e interativa de visualiza
 * Arthur De Oliveira Mendonça
 * João Marcos Silva Hess
 * Getúlio Santos Mendes
+* Leandro Sousa Costa
 
 ### Redes Sociais:
 
