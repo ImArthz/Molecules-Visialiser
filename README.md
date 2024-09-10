@@ -33,7 +33,7 @@ cd molecule_visualizer
 * Abra um terminal e navegue até o diretório onde você salvou o arquivo Python.
 * Execute o script Python com o comando:
 ```bash
-python main.py
+python src/main.py
 ```
 * A GUI (Interface Gráfica do Usuário) será exibida. Nela, você poderá buscar moléculas pelo nome e visualizá-las em 2D e 3D.
 
