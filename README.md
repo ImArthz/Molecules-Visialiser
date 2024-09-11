@@ -408,5 +408,69 @@ O Molecule Visualizer proporciona uma maneira poderosa e interativa de visualiza
 * Rafael Augusto Campos Moreira
 
 ### Redes Sociais:
+<div align="center" style="background-color: #f0f0f0; padding: 20px; border-radius: 10px;">
+  <h2 style="color: #0366d6;">🔗 Connect with me</h2>
+  <p><strong style="font-size: 18px;">Arthur Mendonça</strong></p>
+  <p>
+    <a href="https://github.com/ImArthz" target="_blank">
+      <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="ImArthz" height="40" width="40" style="margin: 0 10px;" />
+    </a>
+    <a href="https://twitter.com/Im_Arthz" target="_blank">
+      <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Im_Arthz" height="40" width="40" style="margin: 0 10px;" />
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=37988528423" target="_blank">
+      <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="WhatsApp" height="40" width="40" style="margin: 0 10px;" />
+    </a>
+    <a href="https://discordapp.com/users/imarthz" target="_blank">
+      <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="imarthz" height="40" width="40" style="margin: 0 10px;" />
+    </a>
+  </p>
+</div>
 
-<div align="center"> <h3>Connect with me:</h3> <p><strong>Arthur Mendonça</strong></p> <p> <a href="https://github.com/ImArthz" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="ImArthz" height="30" width="40" /> </a> <a href="https://twitter.com/Im_Arthz" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Im_Arthz" height="30" width="40" /> </a> <a href="https://api.whatsapp.com/send?phone=37988528423" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/whatsapp.svg" alt="WhatsApp" height="30" width="40" /> </a> <a href="https://discordapp.com/users/imarthz" target="blank"> <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="imarthz" height="30" width="40" /> </a> </p> </div>
+<br>
+
+<div align="center" style="background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
+  <table>
+    <tr>
+      <td align="center">
+        <h3>Arthur Santana</h3>
+        <a href="https://github.com/Rutrama" target="_blank">
+          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="Arthur Santana" height="40" width="40" />
+        </a>
+      </td>
+      <td align="center">
+        <h3>César Henrique</h3>
+        <a href="https://github.com/CesarHRS" target="_blank">
+          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="César Henrique" height="40" width="40" />
+        </a>
+      </td>
+      <td align="center">
+        <h3>João Marcos</h3>
+        <a href="https://github.com/joaomarcoshess" target="_blank">
+          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="João Marcos" height="40" width="40" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <h3>Getúlio Mendes</h3>
+        <a href="https://github.com/Getulio-Mendes" target="_blank">
+          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="Getulio-Mendes" height="40" width="40" />
+        </a>
+      </td>
+      <td align="center">
+        <h3>Leandro Sousa</h3>
+        <a href="https://github.com/LeannonS" target="_blank">
+          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="Leandro Sousa" height="40" width="40" />
+        </a>
+      </td>
+      <td align="center">
+        <h3>Rafael Augusto</h3>
+        <a href="https://github.com/Guiliard" target="_blank">
+          <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="Rafael Augusto" height="40" width="40" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
