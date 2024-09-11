@@ -23,19 +23,27 @@ pip install pillow
 * Nota: O RDKit pode ser difícil de instalar diretamente via pip, pois pode precisar de compilação. Em alguns casos, é melhor usar uma distribuição como o Anaconda, que já inclui o RDKit.
 
 ## Passos para Executar o Código
-* Preparação do Ambiente
-* Crie um diretório de trabalho:
+* 1. Clone o repositório ou baixe-o como zip
+```bash
+git clone <URL_DO_REPOSITORIO>
+
+```
+* 2. Se baixou como zip, extraia o conteúdo.
+* 3. Abra a pasta do programa como folder:
+* 4. No VSCode, use o atalho Ctrl+K+O.
+* 5. Preparação do Ambiente
+* 6. Crie um diretório de trabalho:
 ```bash
 mkdir molecule_visualizer
 cd molecule_visualizer
 ```
-* Execute o Código
-* Abra um terminal e navegue até o diretório onde você salvou o arquivo Python.
-* Execute o script Python com o comando:
+* 7. Execute o Código
+* 8. Abra um terminal e navegue até o diretório onde você salvou o arquivo Python.
+* 9. Execute o script Python com o comando:
 ```bash
 python src/main.py
 ```
-* A GUI (Interface Gráfica do Usuário) será exibida. Nela, você poderá buscar moléculas pelo nome e visualizá-las em 2D e 3D.
+* 10. A GUI (Interface Gráfica do Usuário) será exibida. Nela, você poderá buscar moléculas pelo nome e visualizá-las em 2D e 3D.
 
 ##  Estrutura do Código
 # 1. Importação de Módulos
